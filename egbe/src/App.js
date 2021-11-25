@@ -4,7 +4,6 @@ import { Switch, Route, Redirect} from 'react-router-dom';
 import { GlobalStyle } from './global.styles';
 
 
-import ShopPage from './pages/shop/shop.components';
 import Header from './components/header/header.components';
 import SignInandSignOut from './pages/sign-in-and-sign-up/sign-in-and-sign-up';
 import checkOutPage from './pages/checkoutpage/checkoutpage';
@@ -20,6 +19,7 @@ import { createStructuredSelector } from 'reselect';
 
 
 const HomePage = lazy(() => import('./pages/homepage/homepage.component'));
+const ShopPage = lazy(() => import('./pages/shop/shop.components'));
 
 const App =({usersession, currentUser}) => {
 
