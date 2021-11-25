@@ -9,8 +9,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && npm run build",
-    "start": "nodemon server.js"
+    "build": "cd egbe && npm run build",
+    "start": "nodemon server.js",
+    "heroku-postbuild": "cd egbe && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "repository": {
     "type": "git",
